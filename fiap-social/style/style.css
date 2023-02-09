@@ -1,0 +1,100 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bgPrimary);
+    font-family: 'Roboto', sans-serif;
+    color: var(--textColor);
+}
+
+:root {
+    --bgPrimary: #08090B;
+    --bgSecondary: #151819;
+    --accent: #ED145B;
+
+    --textColor: #91A3AD;
+}
+
+.main-header {
+     background-color: var(--bgSecondary);
+     padding: 8px;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     font-size: 1rem;
+     font-weight: bold;
+     box-shadow: 0px 4px 4px var(--accent), 0px 1px 20px var(--accent);
+}
+
+.main-header > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-header > span {
+    margin-right: 16px;
+    font-size: 32px;
+
+    transition: .2s;
+    cursor: pointer;
+}
+
+.main-header > span:hover {
+    color: var(--accent);
+    transform: scale(1.2) rotate(360deg);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    background: var(--bgSecondary);
+
+    padding: 10px;
+}
+
+.post>header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post>header>div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.post>header>div>span {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.post>main {
+    margin-top: 10px;
+}
+
+.post>main>p{
+    margin: 10px;
+    padding-left: 20px;
+
+    border-left: 2px solid var(--accent);
+}
+
+.post>main>img{
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}

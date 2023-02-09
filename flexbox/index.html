@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        section {
+            /* height: 100vh; */
+            background-color: #CCC;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: nowrap;
+        }
+        
+        .quadrado {
+            background-color: blueviolet;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .pesomaior {
+            flex-shrink: 10;
+        }
+
+        #quadrado2 {
+            align-self: start;
+        }
+
+        .aolado {
+            display: flex;
+            flex-direction: column;
+
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="quadrado">1</div>
+        <div class="aolado">
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+        </div>
+    </section>
+</body>
+</html>
